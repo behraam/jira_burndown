@@ -2,7 +2,7 @@
 A simple tool to check if the current rate of work will be completed by a target date.
 Applicable for longer running projects
 
-##Steps to use
+## Steps to use
 1. Download CSV from JIRA (the following columns: Issue key,Issue id,Parent id,Status,Updated,Resolution)
 2. Install the requirements `pip3 install -r requirements.txt`
 3. Run the python script `python3 create_burndown.py /path/to/input.csv --target 2024-01-15 --save`
@@ -15,10 +15,8 @@ It also assumes that the number of tickets has already been roughly created - i.
 
 =======
 
-
-
-###Good use 
+### Good use 
 Alongside discussions with Product and Engineering using this to sense check whether any expectations that have been set are realistic or not.
 
-###Bad use
+### Bad use
 Making this the forefront of your discussion with engineering and using it to apply pressure to delivery.
