@@ -109,7 +109,7 @@ future_dates = [last_date + Week(i) for i in range(1, 5)]  # 4 weeks into the fu
 future_dates_numeric = mdates.date2num(future_dates)
 
 # Perform exponential smoothing
-model = sm.tsa.SimpleExpSmoothing(np.array(y_values)).fit(smoothing_level=0.1)
+model = sm.tsa.SimpleExpSmoothing(np.array(y_values)).fit(smoothing_level=0.01)
 smoothed_y = model.fittedvalues
 
 # Forecast future values
